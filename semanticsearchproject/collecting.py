@@ -1,8 +1,9 @@
 import requests
 import pandas as pd
+import os
 
-API_KEY = "AIzaSyDS1XB-sxPJE4OkkcsdhMFjV66yXbXO1Ls"
-CHANNEL_ID = "UCnC8SAZzQiBGYVSKZ_S3y4Q"
+API_KEY = os.environ.get("YOUTUBE_API_KEY")  # Set via environment variable
+CHANNEL_ID = os.environ.get("CHANNEL_ID")  # Set via environment variable
 
 # 1. Get 50 video IDs
 search_url = "https://www.googleapis.com/youtube/v3/search"
