@@ -1,0 +1,7 @@
+numpy>=1.24
+pandas>=2.0
+sentence-transformers>=2.2
+# Optional: faiss-cpu is useful for fast vector search but may require conda on Windows
+# faiss-cpu>=1.7; platform_system != "Windows"
+requests>=2.30
+isodate>=0.6

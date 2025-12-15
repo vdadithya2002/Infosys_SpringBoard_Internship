@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semanticsearchproject"
+version = "0.1.0"
+description = "Semantic search utilities"
+authors = [ { name = "Your Name" } ]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "sentence-transformers>=2.2",
+]
