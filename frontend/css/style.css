@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+  background: #0f0f0f;
+  color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: 15px;
+  background: #181818;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 15px;
+}
+
+.card {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+}

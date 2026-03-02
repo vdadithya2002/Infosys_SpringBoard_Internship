@@ -1,0 +1,35 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+semanticsearchproject/.venv/
+
+# Environment variables / secrets
+.env
+*.env
+!.env.example
+semanticsearchproject/.env
+
+# Build/runtime artifacts
+*.log
+*.tmp
+
+# Data and generated artifacts (keep source code light for GitHub)
+semanticsearchproject/youtube_embeddings.index
+semanticsearchproject/merged_with_embeddings.csv
+semanticsearchproject/merged_cleaned.csv
+embedding-code and csv/final_with_embeddings.csv

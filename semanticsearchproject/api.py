@@ -5,8 +5,17 @@ import faiss
 import ast
 from sentence_transformers import SentenceTransformer
 from gemini_config import client
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="QueryTube AI API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 df = None
 index = None
